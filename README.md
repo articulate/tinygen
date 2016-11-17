@@ -25,9 +25,12 @@ tinygen()   // => "K4UP_gkFtzHMt5TN"
 tinygen(32) // => "4Z65y6VjtIaid-PpG6eSnzJ5P7lZwoNI"
 ```
 
-## Publishing
+## Maintenance
+
+To publish a new version, just:
 
 ```
-yarn version
 yarn publish
 ```
+
+You will be prompted for a new version number, the package will be rebuilt, and then pushed to both `git` and `npm`.
