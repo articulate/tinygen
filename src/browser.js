@@ -1,5 +1,5 @@
 const chars  = '-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz',
-      crypto = global.crypto || global.msCrypto
+      crypto = window.crypto || window.msCrypto
 
 const tinygen = (len=16) => {
   const arr = new Uint32Array(len)
