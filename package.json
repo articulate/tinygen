@@ -1,17 +1,24 @@
 {
   "name": "tinygen",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Tiniest of tiny base64 uid generators",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "browser": "dist/browser.js",
   "repository": "git@github.com:articulate/tinygen.git",
   "author": "articulate",
   "license": "UNLICENSED",
   "scripts": {
     "build": "buble -i src -o dist",
-    "clean": "rm -rf dist",
-    "prebuild": "yarn run clean && mkdir -p dist"
+    "clean": "rm -rf dist && mkdir -p dist",
+    "hint": "jshint --reporter=node_modules/jshint-stylish src",
+    "postversion": "git push --tags origin master",
+    "prebuild": "yarn run clean && yarn run hint",
+    "preversion": "git checkout master",
+    "version": "yarn run build"
   },
   "devDependencies": {
-    "buble": "^0.14.2"
+    "buble": "^0.14.2",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1"
   }
 }

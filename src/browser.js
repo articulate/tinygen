@@ -8,7 +8,7 @@ const tinygen = (len=16) => {
 }
 
 const unsupported = () => {
-  throw new Error('Secure random number generation not supported by this browser. Use Chrome, FireFox, or Internet Explorer 11.')
+  throw new Error('Secure random number generation not supported by this browser.')
 }
 
 module.exports = crypto && crypto.getRandomValues ? tinygen : unsupported
