@@ -1,0 +1,9 @@
+{
+  "name": "tinygen",
+  "version": "0.0.1",
+  "description": "Tiniest of tiny base64 uid generators",
+  "main": "index.js",
+  "repository": "git@github.com:articulate/tinygen.git",
+  "author": "articulate",
+  "license": "UNLICENSED"
+}
