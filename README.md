@@ -1,6 +1,6 @@
 # tinygen [![npm version](https://img.shields.io/npm/v/@articulate/tinygen.svg)](https://www.npmjs.com/package/@articulate/tinygen)
 
-Tiniest of tiny `base64` uid generators.  Teeny-tiny browser version included.
+Tiniest of tiny `base64` uid generators.  Teeny-tiny browser version included, only 625 bytes.
 
 ## API
 
