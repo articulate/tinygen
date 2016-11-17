@@ -13,8 +13,7 @@
     "hint": "jshint --reporter=node_modules/jshint-stylish src",
     "postversion": "git push --tags origin master",
     "prebuild": "yarn run clean && yarn run hint",
-    "preversion": "git checkout master && yarn run build",
-    "publish": "yarn version && npm publish --access public"
+    "preversion": "git checkout master && yarn run build"
   },
   "devDependencies": {
     "buble": "^0.14.2",

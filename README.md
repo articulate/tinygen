@@ -30,7 +30,8 @@ tinygen(32) // => "4Z65y6VjtIaid-PpG6eSnzJ5P7lZwoNI"
 To publish a new version, just:
 
 ```
-yarn run publish
+yarn version
+npm publish --access public
 ```
 
-You will be prompted for a new version number, the package will be rebuilt, and the tag pushed to `git` before publishing to `npm`.  Note that this is different than `yarn publish`, which we can't use until [#1694](https://github.com/yarnpkg/yarn/issues/1694) is resolved.
+You will be prompted for a new version number, the package will be rebuilt, and the tag pushed to `git` before publishing to `npm`.  The second step is required until [#1694](https://github.com/yarnpkg/yarn/issues/1694) is resolved.
