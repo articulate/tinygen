@@ -1,6 +1,6 @@
 {
   "name": "@articulate/tinygen",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Tiniest of tiny base64 uid generators",
   "main": "dist/index.js",
   "browser": "dist/browser.js",
