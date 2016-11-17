@@ -5,5 +5,13 @@
   "main": "index.js",
   "repository": "git@github.com:articulate/tinygen.git",
   "author": "articulate",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "buble -i src -o dist",
+    "clean": "rm -rf dist",
+    "prebuild": "yarn run clean && mkdir -p dist"
+  },
+  "devDependencies": {
+    "buble": "^0.14.2"
+  }
 }
