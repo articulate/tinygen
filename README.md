@@ -31,7 +31,7 @@ To publish a new version, just:
 
 ```
 yarn version
-npm publish
+npm publish --access public
 ```
 
 You will be prompted for a new version number, the package will be rebuilt, and the tag pushed to `git`.  The second step is required for now until [#1694](https://github.com/yarnpkg/yarn/issues/1694) is resolved.
