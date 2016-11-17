@@ -1,14 +1,17 @@
 const chars  = '-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz',
-      crypto = window.crypto || window.msCrypto
+      crypto = global.crypto || global.msCrypto,
+      { floor, random } = Math
+
+const pseudogen = (len=16) => {
+  var id = ''
+  while (id.length < len) id += chars[floor(random() * chars.length)]
+  return id
+}
 
 const tinygen = (len=16) => {
   const arr = new Uint32Array(len)
   crypto.getRandomValues(arr)
-  return Array.from(arr).map(x => chars[x % 64]).join('')
+  return arr.reduce((id, x) => id + chars[x % 64], '')
 }
 
-const unsupported = () => {
-  throw new Error('Secure random number generation not supported by this browser.')
-}
-
-module.exports = crypto && crypto.getRandomValues ? tinygen : unsupported
+module.exports = crypto && crypto.getRandomValues ? tinygen : pseudogen
