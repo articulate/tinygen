@@ -9,7 +9,7 @@ const pseudogen = (len=16) => {
 }
 
 const tinygen = (len=16) => {
-  const arr = new Uint32Array(len)
+  const arr = new Uint8Array(len)
   crypto.getRandomValues(arr)
   return arr.reduce((id, x) => id + chars[x % 64], '')
 }
