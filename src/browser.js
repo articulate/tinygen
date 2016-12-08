@@ -12,7 +12,7 @@ const tinygen = (len=16) => {
   var arr = new Uint8Array(len)
   crypto.getRandomValues(arr)
   // IE11 Uint8Array does not have `reduce` so we cast to Array
-  if (!arr.reduce) arr = [].slice.call(arr)
+  if (typeof arr.reduce !== 'function') arr = [].slice.call(arr)
   return arr.reduce((id, x) => id + chars[x % 64], '')
 }
 
