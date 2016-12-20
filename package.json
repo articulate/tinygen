@@ -6,7 +6,7 @@
   "browser": "dist/browser.js",
   "repository": "git@github.com:articulate/tinygen.git",
   "author": "articulate",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "build": "buble -i src -o dist",
     "clean": "rm -rf dist && mkdir -p dist",
