@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+var tinygen  = require('../')
+var len, arg = process.argv[2]
+if (arg) len = parseInt(arg, 10)
+console.log(tinygen(len))

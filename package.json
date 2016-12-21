@@ -4,6 +4,7 @@
   "description": "Tiniest of tiny base64 uid generators",
   "main": "dist/index.js",
   "browser": "dist/browser.js",
+  "bin": "bin/tinygen",
   "repository": "git@github.com:articulate/tinygen.git",
   "author": "articulate",
   "license": "MIT",

@@ -25,6 +25,16 @@ tinygen()   // => "K4UP_gkFtzHMt5TN"
 tinygen(32) // => "4Z65y6VjtIaid-PpG6eSnzJ5P7lZwoNI"
 ```
 
+## CLI
+
+```sh
+$ npm i -g tinygen
+$ tinygen
+Wsk6V84y9C0xI1Us
+$ tinygen 32
+05jrftGx1WROHu6_VQMVwLTtAxJ3AF1_
+```
+
 ## Maintenance
 
 To publish a new version:
