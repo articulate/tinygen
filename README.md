@@ -1,6 +1,6 @@
-# tinygen [![npm version](https://img.shields.io/npm/v/@articulate/tinygen.svg)](https://www.npmjs.com/package/@articulate/tinygen)
+# tinygen [![npm version](https://img.shields.io/npm/v/tinygen.svg)](https://www.npmjs.com/package/tinygen) [![npm downloads](https://img.shields.io/npm/dt/tinygen.svg)](https://www.npmjs.com/package/tinygen)
 
-Tiniest of tiny `base64` uid generators.  Teeny-tiny browser version included, only 624 bytes.
+Tiniest of tiny `base64` uid generators.  Teeny-tiny browser version included, only 757 bytes.
 
 ## API
 
@@ -19,7 +19,7 @@ tinygen :: Number -> String
   A `base64` random uid.
 
 ```js
-const tinygen = require('@articulate/tinygen')
+const tinygen = require('tinygen')
 
 tinygen()   // => "K4UP_gkFtzHMt5TN"
 tinygen(32) // => "4Z65y6VjtIaid-PpG6eSnzJ5P7lZwoNI"
@@ -27,7 +27,7 @@ tinygen(32) // => "4Z65y6VjtIaid-PpG6eSnzJ5P7lZwoNI"
 
 ## Maintenance
 
-To publish a new version, just:
+To publish a new version:
 
 ```
 yarn version
